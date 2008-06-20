@@ -11,8 +11,8 @@ License: GPL
 Group: Networking/Instant messaging
 Url: http://galaxium.googlecode.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: gtk-sharp2-devel
-BuildRequires: gecko-sharp2
+BuildRequires: glade-sharp2
+#BuildRequires: gecko-sharp2
 BuildRequires: mono-devel
 BuildRequires: webkit-sharp-devel
 BuildRequires: ndesk-dbus-glib
