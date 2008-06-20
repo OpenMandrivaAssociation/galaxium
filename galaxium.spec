@@ -39,6 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %_lib != lib
 mv %buildroot%_prefix/lib/%name/* %buildroot%_libdir/%name/
 %endif
+cp build/*.config %buildroot%_libdir/%name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
