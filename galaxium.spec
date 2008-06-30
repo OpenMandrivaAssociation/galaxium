@@ -1,5 +1,5 @@
 %define name galaxium
-%define version 0.7.3
+%define version 0.7.3.1
 %define release %mkrel 1
 
 Summary: Galaxium Messenger for MSN
