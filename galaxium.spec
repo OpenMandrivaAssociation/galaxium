@@ -21,6 +21,7 @@ BuildRequires: mono-addins
 BuildRequires: libanculus-sharp
 BuildRequires: libgstreamer-devel
 BuildRequires: libswfdec-devel
+BuildRequires: desktop-file-utils
 
 %description
 This is an instant messaging client that uses the MSN service. It has
@@ -39,6 +40,11 @@ sh ./autogen.sh
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 cp build/*.config %buildroot%_libdir/%name
+
+desktop-file-install --vendor="" \
+  --remove-category="Application" \
+  --add-category="GTK" \
+  --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
