@@ -1,13 +1,13 @@
 %define name galaxium
 %define version 0.7.4.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Galaxium Messenger for MSN
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://galaxium.googlecode.com/files/%{name}_%{version}.tar.gz
-Patch: galaxium-0.7.2-swfdec-major.patch
+Patch: galaxium-0.7.4.1-swfdec-major.patch
 License: GPLv2+
 Group: Networking/Instant messaging
 Url: http://galaxium.googlecode.com/
@@ -29,7 +29,7 @@ a simple GNOME interface.
 
 %prep
 %setup -q
-%patch -p1
+%patch -p1 -b .swfdec-major
 
 %build
 sh ./autogen.sh
