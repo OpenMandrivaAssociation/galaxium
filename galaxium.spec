@@ -8,6 +8,8 @@ Version: %{version}
 Release: %{release}
 Source0: http://galaxium.googlecode.com/files/%{name}_%{version}.tar.gz
 Patch: galaxium-0.7.4.1-swfdec-major.patch
+#gw from svn, fix build with new mono
+Patch1: galaxium-r1218-fix-build.patch
 License: GPLv2+
 Group: Networking/Instant messaging
 Url: http://galaxium.googlecode.com/
@@ -30,9 +32,10 @@ a simple GNOME interface.
 %prep
 %setup -q
 %patch -p1 -b .swfdec-major
+%patch1
+sh ./autogen.sh
 
 %build
-sh ./autogen.sh
 %configure2_5x
 %make
 
