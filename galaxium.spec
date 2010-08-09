@@ -18,7 +18,7 @@ BuildRequires: glade-sharp2
 #BuildRequires: gecko-sharp2
 BuildRequires: mono-devel
 BuildRequires: webkit-sharp-devel
-BuildRequires: ndesk-dbus-glib
+BuildRequires: ndesk-dbus-glib-devel
 BuildRequires: mono-addins
 BuildRequires: libanculus-sharp
 BuildRequires: libgstreamer-devel
