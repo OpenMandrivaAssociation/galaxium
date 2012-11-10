@@ -1,0 +1,10 @@
+diff -p -up galaxium-0.7.4.1/build/libswfdec-sharp.dll.config.swfdec-major galaxium-0.7.4.1/build/libswfdec-sharp.dll.config
+--- galaxium-0.7.4.1/build/libswfdec-sharp.dll.config.swfdec-major	2008-06-09 18:28:18.000000000 +0200
++++ galaxium-0.7.4.1/build/libswfdec-sharp.dll.config	2008-09-08 14:06:50.000000000 +0200
+@@ -1,4 +1,4 @@
+ <configuration>
+-  <dllmap dll="libswfdec-0.6" target="libswfdec-0.6.so.90"/>
+-  <dllmap dll="libswfdec-gtk-0.6" target="libswfdec-gtk-0.6.so.90"/>
++  <dllmap dll="libswfdec-0.6" target="libswfdec-0.8.so.0"/>
++  <dllmap dll="libswfdec-gtk-0.6" target="libswfdec-gtk-0.8.so.0"/>
+ </configuration>

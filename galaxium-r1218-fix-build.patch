@@ -1,0 +1,18 @@
+Index: src/Galaxium.Core/Utilities/ArgumentUtility.cs
+===================================================================
+--- src/Galaxium.Core/Utilities/ArgumentUtility.cs	(revision 1217)
++++ src/Galaxium.Core/Utilities/ArgumentUtility.cs	(revision 1218)
+@@ -278,10 +278,10 @@
+ 		/// <returns></returns>
+ 		public static bool IsNullable (object obj)
+ 		{
+-			if (obj == null)
+-				return false;
++			var type = obj.GetType ();
+ 
+-			return obj is Nullable;
++			return (type.IsGenericType
++			        && type.GetGenericTypeDefinition ().Equals (typeof (Nullable<>)));
+ 		}
+ 
+ 		/// <summary>
