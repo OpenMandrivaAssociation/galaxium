@@ -12,7 +12,7 @@ Patch: galaxium-0.7.4.1-swfdec-major.patch
 Patch1: galaxium-r1218-fix-build.patch
 License: GPLv2+
 Group: Networking/Instant messaging
-Url: http://galaxium.googlecode.com/
+Url: https://galaxium.googlecode.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: glade-sharp2
 #BuildRequires: gecko-sharp2
