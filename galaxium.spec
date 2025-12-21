@@ -14,6 +14,11 @@ License: GPLv2+
 Group: Networking/Instant messaging
 Url: https://galaxium.googlecode.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: glade-sharp2
 #BuildRequires: gecko-sharp2
 BuildRequires: mono-devel
